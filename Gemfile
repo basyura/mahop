@@ -8,6 +8,7 @@ gem 'rails', '3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'web-app-theme'
 gem 'restful-authentication'
+gem 'dynamic_form'
 
 # Use unicorn as the web server
 # gem 'unicorn'
