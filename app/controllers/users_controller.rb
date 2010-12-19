@@ -1,9 +1,5 @@
 class UsersController < ApplicationController
-
-  def index
-    render :text => "hello"
-  end
-  
+  skip_before_filter :login_required , :only => [:new , :create]
 
   # render new.rhtml
   def new
@@ -14,8 +10,9 @@ class UsersController < ApplicationController
     logout_keeping_session!
     @user = User.new(params[:user])
     success = @user && @user.save
+    puts "success to create user ? => #{success}"
     if success && @user.errors.empty?
-            # Protects against session fixation attacks, causes request forgery
+      # Protects against session fixation attacks, causes request forgery
       # protection if visitor resubmits an earlier form using back
       # button. Uncomment if you understand the tradeoffs.
       # reset session
