@@ -1,6 +1,7 @@
 Mahop::Application.routes.draw do
   resources :users
   resources :projects
+  resources :profile
 
   resource :session, :only => [:new, :create, :destroy]
 
