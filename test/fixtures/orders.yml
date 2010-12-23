@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  mount: 1
+  start_at: 2010-12-23
+  end_at: 2010-12-23
+
+two:
+  id: 1
+  mount: 1
+  start_at: 2010-12-23
+  end_at: 2010-12-23
