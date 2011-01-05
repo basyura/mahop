@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(:version => 20101223064723) do
 
   create_table "orders", :force => true do |t|
-    t.integer  "mount"
+    t.integer  "amount"
     t.date     "start_at"
     t.date     "end_at"
     t.datetime "created_at"
@@ -23,7 +23,8 @@ ActiveRecord::Schema.define(:version => 20101223064723) do
   create_table "plans", :force => true do |t|
     t.integer  "order_id"
     t.integer  "uid"
-    t.integer  "mount"
+    t.date     "date"
+    t.integer  "amount"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

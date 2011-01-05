@@ -3,6 +3,7 @@ mahop is a man-hour plannning application.
 
 User
   id
+  name
 
 Order
   id

@@ -4,7 +4,8 @@ class CreatePlans < ActiveRecord::Migration
       t.integer :id
       t.integer :order_id
       t.integer :uid
-      t.integer :mount
+      t.date    :date
+      t.integer :amount
       t.timestamps
     end
   end
